@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-color: #19a1ad;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+#bg-top {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/bg-pattern-top.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: right 55vw top -60vw;
+}
+
+#bg-bottom {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/bg-pattern-bottom.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: left 55vw bottom -60vw;
+}
+
+#profile-card {
+  height: 400px;
+  width: clamp(320px, 90vw, 400px);
+  background-color: azure;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.top-grid {
+  height: 75%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+#blue-background {
+  border-radius: 20px 20px 0 0;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background-image: url(./images/bg-pattern-card.svg);
+  z-index: 1;
+  height: 100%;
+  min-width: 100%;
+}
+
+#middle-section {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-bottom: 5px solid hsl(211, 68%, 94%);
+}
+
+p {
+  color: hsl(219, 14%, 63%);
+}
+
+.profile-description {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.age,
+.name {
+  display: inline;
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.city {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#profile-photo {
+  width: 30%;
+  border-radius: 50%;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  z-index: 2;
+  border: 5px solid white;
+}
+
+#stats-container {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
