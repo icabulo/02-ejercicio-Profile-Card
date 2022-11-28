@@ -99,7 +99,7 @@ It will be nice to use SASS and Boostrap to create CSS easier.
 ### Useful resources
 
 - [Flexbox tutorial](https://www.youtube.com/watch?v=tXIhdp5R7sc) - This helped me figuring out how to use Flexbox properties.
-- [Grid tutorial](https://youtu.be/rg7Fvvl3taU) - This is and overview tutorial for Grid.
+- [Grid tutorial](https://youtu.be/rg7Fvvl3taU) - This is an overview tutorial for Grid.
 - [Position property](https://youtu.be/IfMYDsorYXw) - This is an amazing tutorial for position property basic concepts.
 
 ## Author
